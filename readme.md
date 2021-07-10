@@ -3,7 +3,7 @@
 A simple password generator on CLI.  
 コマンドラインで動くパスワード生成アプリケーションです。  
 
-
+---
 
 ## Installation
 
@@ -17,6 +17,9 @@ $ npm install
 $ npm run build
 $ npm link
 ```
+
+---
+
 ## Usage/Examples
 #### Normal usage
 ```bash
@@ -28,21 +31,11 @@ $ passgen
 $ passgen -l 20 or --length=20
 ```
 
-If you check to output some errors when you use ``` -s ``` option,
-you must fix to correct path to your desktop folder.  
-``` -s ``` オプションを利用したときにエラーが出た場合、デスクトップへのパスを調べて変更する必要があります。
+---
 
-##### File: src/savePassword.ts
-```javascript
-const dir_desktop: string = 'Desktop';
-```
-then type on CLI
-
-``` bash
-$ npm run build
-```  
 ## Features
-
+- Helps  
+Command: ``` -h ``` or ``` --help ```
 - Save to passwords.txt  
 Command: ``` -s ``` or ``` --save ```
 - Change length of password  
