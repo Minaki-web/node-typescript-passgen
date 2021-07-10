@@ -5,7 +5,7 @@ A simple password generator on CLI.
 
 ## Installation
 Install this project on CLI  
-インストール方法(コマンドラインのみ)
+インストール方法
 
 ```bash
 $ git clone https://github.com/Minaki-web/node-passgen
@@ -19,16 +19,18 @@ $ npm run build
 ```bash
 $ node dist/index.js (option)
 ```
-To create a symlink to run "passgen" from anywhere
+
+To create a symlink to run "passgen" from anywhere  
+シムリンクを使ってどこからでもパスワードを生成する方法です
 
 ```
-npm link
+$ npm link
 
 # Now you can run
-passgen (options)
+$ passgen (options)
 
 # To remove symlink
-npm unlink
+$ npm unlink
 ```
 
 ## Options
