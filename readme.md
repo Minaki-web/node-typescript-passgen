@@ -3,10 +3,7 @@
 A simple password generator on CLI.  
 コマンドラインで動くパスワード生成アプリケーションです。  
 
----
-
 ## Installation
-
 Install this project on CLI  
 インストール方法(コマンドラインのみ)
 
@@ -18,8 +15,6 @@ $ npm run build
 $ npm link
 ```
 
----
-
 ## Usage/Examples
 #### Normal usage
 ```bash
@@ -30,8 +25,6 @@ $ passgen
 ```bash
 $ passgen -l 20 or --length=20
 ```
-
----
 
 ## Features
 - Helps  
@@ -46,5 +39,3 @@ Command: ``` -nu ``` or ``` --no-uppercase ```
 Command: ``` -nn ``` or ``` --no-number ```
 - Exclude symbols  
 Command: ``` -ns ``` or ``` --no-symbol ```
-
-  
