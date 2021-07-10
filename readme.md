@@ -12,33 +12,36 @@ $ git clone https://github.com/Minaki-web/node-passgen
 $ cd node-passgen
 $ npm install 
 $ npm run build
-$ npm link
 ```
 
 ## Usage/Examples
 #### Normal usage
 ```bash
-$ passgen
+$ node dist/index.js (option)
+```
+To create a symlink to run "passgen" from anywhere
+
+```
+npm link
+
+# Now you can run
+passgen (options)
+
+# To remove symlink
+npm unlink
 ```
 
-#### Using option
-```bash
-$ passgen -l 20 or --length=20
-```
+## Options
 
-## Features
-- Helps  
-Command: ``` -h ``` or ``` --help ```
-- Save to passwords.txt  
-Command: ``` -s ``` or ``` --save ```
-- Change length of password  
-Command: ``` -l <number>``` or ``` --length <number>```
-- Exclude uppercase characters  
-Command: ``` -nu ``` or ``` --no-uppercase ```
-- Exclude numbers  
-Command: ``` -nn ``` or ``` --no-number ```
-- Exclude symbols  
-Command: ``` -ns ``` or ``` --no-symbol ```
+| Short | Long               | Description                      |
+| ----- | ------------------ | -------------------------------- |
+| -l    | --length \<number> | length of password (default: 16) |
+| -s    | --save             | save password to passwords.txt   |
+| -nu   | --no-uppercase     | remove uppercase characters      |
+| -nn   | --no-number        | remove numbers                   |
+| -ns   | --no-symbol        | remove symbols                   |
+| -h    | --help             | display help for command         |
+| -V    | --version          | Show the version                 |
 
 
 ## License
