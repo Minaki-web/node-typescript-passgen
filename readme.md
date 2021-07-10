@@ -39,3 +39,11 @@ Command: ``` -nu ``` or ``` --no-uppercase ```
 Command: ``` -nn ``` or ``` --no-number ```
 - Exclude symbols  
 Command: ``` -ns ``` or ``` --no-symbol ```
+
+
+## License
+
+[MIT](https://choosealicense.com/licenses/mit/)
+
+I used [this video](https://www.youtube.com/watch?v=3Xx83JAktXk) as a reference for making this project.  
+I'd wanted to use TypeScript and Webpack so I challenged it.
