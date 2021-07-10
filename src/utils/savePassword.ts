@@ -9,6 +9,8 @@ const dir_home: string = process.env[process.platform == 'win32' ? 'USERPROFILE'
 const dir_desktop = 'Desktop';
 
 const savePassword = (password: string) => {
+  // default path.join(dir_home, dir_desktop, 'passwords.txt')
+  // if you want to output to dist folder, use path.join(__dirname, '../dist', 'passwords.txt')
   fs.open(path.join(dir_home, dir_desktop, 'passwords.txt'), 'a', 666, (_e: NodeJS.ErrnoException | null, id: number) => {
     fs.write(id, password + os.EOL, null, 'utf-8', () => {
       fs.close(id, () => {
