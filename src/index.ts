@@ -11,7 +11,7 @@ const commander: program.Command = new program.Command();
 commander.version('1.0.0').description('Password generator of Node.js');
 commander
   .option('-l, --length <number>', 'Length of password', '16')
-  .option('-s, --save', 'Save to file')
+  .option('-s, --save', 'Save password to dist/passwords.txt')
   .option('-nu --no-uppercase', 'Remove uppercases')
   .option('-nn, --no-number', 'Remove numbers')
   .option('-ns, --no-symbol', 'Remove symbols')
