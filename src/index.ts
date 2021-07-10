@@ -6,6 +6,8 @@ import chalk from 'chalk';
 import createPassword from './utils/createPassword';
 import savePassword from './utils/savePassword';
 
+const log = console.log;
+
 // create commands
 const commander: program.Command = new program.Command();
 commander.version('0.1.0').description('Password generator of Node.js');
@@ -35,5 +37,5 @@ clipboardy.writeSync(generatedPassword);
 save ? savePassword(generatedPassword) : '';
 
 // output
-console.log(chalk.greenBright('Generated Password: ') + chalk.bold(generatedPassword));
-console.log(chalk.yellow('Password was copied to clipboard'));
+log(`${chalk.bgGreen('Generated Password:')} ${chalk.bold(generatedPassword)}`);
+log(chalk.yellow('Password was copied to clipboard'));
