@@ -35,15 +35,16 @@ $ npm unlink
 
 ## Options
 
-| Short | Long               | Description                      |
-| ----- | ------------------ | -------------------------------- |
-| -l    | --length \<number> | length of password (default: 16) |
-| -s    | --save             | save password to passwords.txt   |
-| -nu   | --no-uppercase     | remove uppercase characters      |
-| -nn   | --no-number        | remove numbers                   |
-| -ns   | --no-symbol        | remove symbols                   |
-| -h    | --help             | display help for command         |
-| -V    | --version          | Show the version                 |
+| Short | Long                | Description                      |
+| ----- | ------------------- | -------------------------------- |
+| -l    | --length \<number>  | length of password (default: 16) |
+| -s    | --save              | save password to passwords.txt   |
+| -c    | --comment \<string> | Add comment                      |
+| -nu   | --no-uppercase      | remove uppercase characters      |
+| -nn   | --no-number         | remove numbers                   |
+| -ns   | --no-symbol         | remove symbols                   |
+| -h    | --help              | display help for command         |
+| -V    | --version           | Show the version                 |
 
 
 ## License
