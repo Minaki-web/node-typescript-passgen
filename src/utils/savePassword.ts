@@ -2,12 +2,13 @@ import * as fs from 'fs';
 import * as path from 'path';
 import * as os from 'os';
 import chalk from 'chalk';
+import { log } from '..';
 
-const log = console.log;
+const savePassword = (password: string, comment: string = '') => {
+  comment = comment != '' ? `#${comment}` : '';
 
-const savePassword = (password: string) => {
   fs.open(path.join(__dirname, '../dist', 'passwords.txt'), 'a', 666, (_e: NodeJS.ErrnoException | null, id: number) => {
-    fs.write(id, password + os.EOL, null, 'utf-8', () => {
+    fs.write(id, `${password} ${comment}` + os.EOL, null, 'utf-8', () => {
       fs.close(id, () => {
         log(chalk.magentaBright('Password saved to passwords.txt'));
       });
