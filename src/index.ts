@@ -33,7 +33,7 @@ const { length, save, comment, uppercase, number, symbol }: CommandOptions = com
 
 // generate password and copy to clipboard
 const generatedPassword = generatePassword(length, uppercase, number, symbol);
-clipboardy.writeSync(generatedPassword);
+clipboardy.writeSync(generatedPassword) as any;
 
 // save to passwords.txt
 save ? savePassword(generatedPassword, comment) : '';
