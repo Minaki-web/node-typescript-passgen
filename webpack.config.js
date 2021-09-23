@@ -6,26 +6,24 @@ module.exports = {
   mode: 'production',
   target: 'node',
   entry: {
-    main: './src/index.ts',
+    main: './src/index.ts'
   },
   output: {
     path: path.join(__dirname, 'dist'),
-    filename: 'index.js',
+    filename: 'index.js'
   },
   module: {
     rules: [
       {
         test: /\.ts$/,
         use: ['ts-loader', 'shebang-loader'],
-        exclude: /node_modules/,
-      },
-    ],
+        exclude: /node_modules/
+      }
+    ]
   },
   externals: [nodeExternals()],
   plugins: [new webpack.BannerPlugin({ banner: '#!/usr/bin/env node', raw: true })],
   resolve: {
-    extensions: [
-      '.ts', '.js',
-    ],
-  },
+    extensions: ['.ts', '.js']
+  }
 };

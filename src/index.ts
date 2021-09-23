@@ -10,7 +10,7 @@ export const log = console.log;
 
 // create commands
 const commander: program.Command = new program.Command();
-commander.version('0.1.0').description('Password generator of Node.js');
+commander.version('1.0.0').description('Password generator of Node.js');
 commander
   .option('-l, --length <number>', 'Length of password', '16')
   .option('-s, --save', 'Save password to dist/passwords.txt')
