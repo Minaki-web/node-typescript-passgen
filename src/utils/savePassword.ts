@@ -10,7 +10,7 @@ const savePassword = (password: string, comment: string = '') => {
   fs.open(
     path.join(__dirname, '../dist', 'passwords.txt'),
     'a',
-    666,
+    664,
     (_e: NodeJS.ErrnoException | null, id: number) => {
       fs.write(id, `${password} ${comment}` + os.EOL, null, 'utf-8', () => {
         fs.close(id, () => {
